@@ -1,9 +1,9 @@
 <template>
     <v-container fluid fill-height class="hello">
         <v-layout column>
-            <v-row>
-                <v-col cols="4"></v-col>
-                <v-col cols="4">
+            <v-row style="height: 0px">
+                <v-col cols="4" style="height: 0px"></v-col>
+                <v-col cols="4" style="height: 0px">
                     <v-text-field 
                         single-line 
                         solo 
@@ -13,7 +13,7 @@
                         append-icon="mdi-magnify"
                         @click:append="Search"></v-text-field>
                 </v-col>
-                <v-col cols="4"></v-col>
+                <v-col cols="4" style="height: 0px"></v-col>
             </v-row>
             <v-row>
                 <v-col cols="4" v-for="farmer in farmers" :key="farmer.name">
